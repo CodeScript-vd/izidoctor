@@ -1,0 +1,654 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Bold.woff2') format('woff2'),
+        url('fonts/Nunito-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-BlackItalic.woff2') format('woff2'),
+        url('fonts/Nunito-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Black.woff2') format('woff2'),
+        url('fonts/Nunito-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-ExtraBoldItalic.woff2') format('woff2'),
+        url('fonts/Nunito-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-BoldItalic.woff2') format('woff2'),
+        url('fonts/Nunito-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-ExtraBold.woff2') format('woff2'),
+        url('fonts/Nunito-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Light.woff2') format('woff2'),
+        url('fonts/Nunito-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-ExtraLight.woff2') format('woff2'),
+        url('fonts/Nunito-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-ExtraLightItalic.woff2') format('woff2'),
+        url('fonts/Nunito-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/NunitoHeavy-Italic.woff2') format('woff2'),
+        url('fonts/NunitoHeavy-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Italic.woff2') format('woff2'),
+        url('fonts/Nunito-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/NunitoHeavy-Regular.woff2') format('woff2'),
+        url('fonts/NunitoHeavy-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-SemiBoldItalic.woff2') format('woff2'),
+        url('fonts/Nunito-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay Black It';
+    src: url('fonts/Goldplay-BlackIt.woff2') format('woff2'),
+        url('fonts/Goldplay-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-LightItalic.woff2') format('woff2'),
+        url('fonts/Nunito-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Regular.woff2') format('woff2'),
+        url('fonts/Nunito-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-SemiBold.woff2') format('woff2'),
+        url('fonts/Nunito-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Medium.woff2') format('woff2'),
+        url('fonts/Nunito-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-Medium.woff2') format('woff2'),
+        url('fonts/Goldplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-Bold.woff2') format('woff2'),
+        url('fonts/Goldplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-Black.woff2') format('woff2'),
+        url('fonts/Goldplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-MediumIt.woff2') format('woff2'),
+        url('fonts/Goldplay-MediumIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-SemiBold.woff2') format('woff2'),
+        url('fonts/Goldplay-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-SemiBoldIt.woff2') format('woff2'),
+        url('fonts/Goldplay-SemiBoldIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-BoldIt.woff2') format('woff2'),
+        url('fonts/Goldplay-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-Regular.woff2') format('woff2'),
+        url('fonts/Goldplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-Thin.woff2') format('woff2'),
+        url('fonts/Goldplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-ThinIt.woff2') format('woff2'),
+        url('fonts/Goldplay-ThinIt.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-LightIt.woff2') format('woff2'),
+        url('fonts/Goldplay-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-Light.woff2') format('woff2'),
+        url('fonts/Goldplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src: url('fonts/Goldplay-RegularIt.woff2') format('woff2'),
+        url('fonts/Goldplay-RegularIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --app-primary: #00c6ff;
+    --app-secondary: #4d3aff;
+    --app-gray: #56606d;
+    --app-lightgray: #f0f4f8;
+    --app-lightgray1: #ebeff3;
+    --app-lightgray2: #e1e4e8;
+    --app-transition: all 0.3s ease;
+
+    --app-success: #3fbf62;
+    --app-info: #0167d7;
+    --app-error: #eb4e2c;
+    --app-warning: #ef9400;
+}
+
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Goldplay';
+    font-size: 1em;
+    font-weight: inherit;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+a, li, span, article, header, footer, h1, h2, h3, h4, h5, h6, img, svg, nav {
+    outline: none;
+}
+
+strong{
+    font-weight: 700;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--app-gray);
+    font-family: 'Nunito';
+    font-size: 14px;
+    line-height: 1.5em;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    font-weight: inherit;
+    text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+span {
+    font-weight: inherit;
+}
+
+input, textarea, select {
+    border: 1px solid var(--app-lightgray2);
+    border-radius: 8px;
+    color: inherit;
+    display: block;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+textarea{
+    height: 80px;
+}
+
+button {
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    line-height: 1em;
+    padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+    box-shadow: 0 2px 7px rgba(50, 60, 72, 0.06);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type=checkbox]{
+    box-shadow: none;
+    height: 16px;
+    width: 16px;
+}
+
+.button{
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    padding: 0.5em 0.8em;
+    width: auto;
+    white-space: nowrap;
+}
+
+.button svg{
+    margin-right: 6px;
+}
+
+.btn-main{
+    color: var(--app-primary);
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.btn-secondary{
+    color: var(--app-secondary);
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.btn-main-full{
+    border-radius: 8px;
+    background: var(--app-primary);
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: bold;
+    padding: 0.8em 1.2em;
+}
+
+.btn-secondary-full{
+    border-radius: 8px;
+    background: var(--app-secondary);
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: bold;
+    padding: 0.8em 1.2em;
+}
+
+.btn-simple{
+    background: #fff;
+    border: 1px solid var(--app-lightgray2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.btn-ghost{
+    background: transparent;
+    border: 2px solid;
+}
+
+.btn-success{
+    color: var(--app-success);
+}
+
+.btn-info{
+    color: var(--app-info);
+}
+
+.btn-error{
+    color: var(--app-error);
+}
+
+.btn-warning{
+    color: var(--app-warning);
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+table{
+    border-radius: 3px;
+    border-spacing: 0;
+    box-sizing: border-box;
+    display: table;
+    overflow-x: auto;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+table td{
+    box-sizing: border-box;
+    text-align: left;
+}
+
+table th, table td{
+    text-align: left;
+}
+
+table th{
+    font-weight: bold;
+    padding: 10px;
+}
+
+table th{
+    cursor: pointer;
+    align-items: center;
+}
+
+table tbody tr:first-child td{
+    border-top: none;
+}
+
+table td{
+    padding: 10px;
+}
+
+table tr{
+    position: relative;
+}
+
+.main-row{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
+}
+
+.main-row-normal{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1020px;
+}
+
+.main-row-short{
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+}
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.card{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card__content{
+    border-radius: 6px;
+    box-shadow: 0 5px 40px rgb(50 60 72 / 10%);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+    transition: var(--app-transition);
+}
+
+.card__image{
+    height: 120px;
+    overflow: hidden;
+}
+
+.card__image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: var(--app-transition);
+}
+
+.card__circle-image{
+    border-radius: 100px;
+    height: 120px;
+    margin: 20px auto 0;
+    overflow: hidden;
+    width: 120px;
+}
+
+.card__circle-image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: var(--app-transition);
+}
+
+.card__caption{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.card__title{
+    color: var(--app-primary);
+    font-size: 1.125em;
+    font-weight: bold;
+    transition: var(--app-transition);
+}
+
+.card__footer{
+    background: var(--app-lightgray);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.card-hover:hover .card__content{
+    box-shadow: 0 5px 40px rgb(50 60 72 / 30%);
+}
+
+.card-hover:hover .card__image img,
+.card-hover:hover .card__circle-image img{
+    transform: scale(1.2);
+}
+
+.card-hover:hover .card__title{
+    color: var(--app-secondary);
+}
+
+.card-2{
+    flex: 0 0 50%;
+}
+
+.card-3{
+    flex: 0 0 33.33%;
+}
+
+.card-4{
+    flex: 0 0 25%;
+}
+
+.card-5{
+    flex: 0 0 20%;
+}
