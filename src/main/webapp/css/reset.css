@@ -464,7 +464,7 @@ input[type=checkbox]{
 
 .btn-ghost{
     background: transparent;
-    border: 1px solid;
+    border: 2px solid;
 }
 
 .btn-success{
