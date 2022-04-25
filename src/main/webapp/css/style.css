@@ -1,0 +1,135 @@
+@import 'reset.css';
+
+
+.site-header{
+    color: #fff;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.site-header__content{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.site-header__content>div{
+    flex: 1;
+}
+
+.site-header__brand{
+    align-items: center;
+    display: flex;
+}
+
+.logo{
+    margin-bottom: -20px;
+}
+
+.slogan{
+    margin-left: 20px;
+}
+
+.site-header__user{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.site-nav__list{
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.site-nav__item a{
+    display: block;
+    padding: 4px 15px;
+}
+
+
+
+
+.main-section{
+    background: var(--app-primary);
+    color: #fff;
+    height: 720px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-section__wrapper{
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.main-section__content{
+    position: relative;
+    z-index: 3;
+}
+
+.main-section__caption{
+    font-size: 1.72em;
+    margin-bottom: 30px;
+}
+
+.main-section__title{
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.main-section__subtitle{
+    font-weight: 600;
+}
+
+.searchbox{
+    display: flex;
+    max-width: 540px;
+}
+
+.searchbox select{
+    background: transparent;
+    border: 2px solid #fff;
+    margin-right: 10px;
+}
+
+.searchbox select option{
+    color: var(--app-gray);
+}
+
+.searchbox button{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main-section__image{
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.main-section__image img{
+    margin-bottom: -10px;
+}
+
+.main-section .morph{
+    position: absolute;
+    z-index: 1;
+}
+
+.main-section .morph1{
+    bottom: 0;
+    left: 0;
+}
+
+.main-section .morph2{
+    right: 180px;
+    top: 0;
+    transform: rotate(180deg) scaleX(1.5) scaleY(1.25)!important;
+}
