@@ -19,10 +19,6 @@
     transition: var(--app-transition);
 }
 
-.site-header__content>div{
-    flex: 1;
-}
-
 .site-header__brand{
     align-items: center;
     display: flex;
@@ -46,6 +42,10 @@
 .site-header__user__button{
     color: #fff;
     transition: var(--app-transition);
+}
+
+.site-header__nav{
+    flex: 1;
 }
 
 .site-nav__list{
@@ -167,12 +167,14 @@
 .main-section .morph1{
     bottom: 0;
     left: 0;
+    width: 40%;
 }
 
 .main-section .morph2{
-    right: 180px;
+    right: 0;
     top: 0;
     transform: rotate(180deg) scaleX(1.5) scaleY(1.25)!important;
+    width: 40%;
 }
 
 
@@ -226,4 +228,24 @@
 .site-footer{
     text-align: center;
     padding: 40px 0;
+}
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+
+    .main-section{
+        height: 640px;
+    }
+
+    .main-section__caption{
+        font-size: 1.4em;
+    }
+
+    .main-section__image{
+        max-width: 55%;
+    }
+
 }
