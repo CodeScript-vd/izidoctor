@@ -414,11 +414,16 @@ input[type=checkbox]{
 }
 
 .button{
+    align-items: center;
     border-radius: 4px;
-    display: block;
+    display: flex;
     padding: 0.5em 0.8em;
     width: auto;
     white-space: nowrap;
+}
+
+.button svg{
+    margin-right: 6px;
 }
 
 .btn-main{
@@ -428,7 +433,7 @@ input[type=checkbox]{
 }
 
 .btn-secondary{
-    color: var(--app-gray);
+    color: var(--app-secondary);
     font-size: 1.125em;
     font-weight: bold;
 }
@@ -451,10 +456,15 @@ input[type=checkbox]{
     padding: 0.8em 1.2em;
 }
 
-.btn-ghost{
+.btn-simple{
     background: #fff;
     border: 1px solid var(--app-lightgray2);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.btn-ghost{
+    background: transparent;
+    border: 2px solid;
 }
 
 .btn-success{
@@ -541,4 +551,104 @@ table tr{
     margin-left: auto;
     margin-right: auto;
     width: 768px;
+}
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.card{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card__content{
+    border-radius: 6px;
+    box-shadow: 0 5px 40px rgb(50 60 72 / 10%);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+    transition: var(--app-transition);
+}
+
+.card__image{
+    height: 120px;
+    overflow: hidden;
+}
+
+.card__image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: var(--app-transition);
+}
+
+.card__circle-image{
+    border-radius: 100px;
+    height: 120px;
+    margin: 20px auto 0;
+    overflow: hidden;
+    width: 120px;
+}
+
+.card__circle-image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: var(--app-transition);
+}
+
+.card__caption{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.card__title{
+    color: var(--app-primary);
+    font-size: 1.125em;
+    font-weight: bold;
+    transition: var(--app-transition);
+}
+
+.card__footer{
+    background: var(--app-lightgray);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.card-hover:hover .card__content{
+    box-shadow: 0 5px 40px rgb(50 60 72 / 30%);
+}
+
+.card-hover:hover .card__image img,
+.card-hover:hover .card__circle-image img{
+    transform: scale(1.2);
+}
+
+.card-hover:hover .card__title{
+    color: var(--app-secondary);
+}
+
+.card-2{
+    flex: 0 0 50%;
+}
+
+.card-3{
+    flex: 0 0 33.33%;
+}
+
+.card-4{
+    flex: 0 0 25%;
+}
+
+.card-5{
+    flex: 0 0 20%;
 }

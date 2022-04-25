@@ -6,6 +6,7 @@
     left: 0;
     position: fixed;
     top: 0;
+    transition: var(--app-transition);
     width: 100%;
     z-index: 999;
 }
@@ -15,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    transition: var(--app-transition);
 }
 
 .site-header__content>div{
@@ -31,12 +33,19 @@
 }
 
 .slogan{
+    color: #fff;
     margin-left: 20px;
+    transition: var(--app-transition);
 }
 
 .site-header__user{
     display: flex;
     justify-content: flex-end;
+}
+
+.site-header__user__button{
+    color: #fff;
+    transition: var(--app-transition);
 }
 
 .site-nav__list{
@@ -47,8 +56,40 @@
 }
 
 .site-nav__item a{
+    color: #fff;
     display: block;
     padding: 4px 15px;
+    transition: var(--app-transition);
+}
+
+.sticky{
+    background: #fff;
+    box-shadow: 0 5px 40px rgb(50 60 72 / 10%);
+    color: var(--app-gray);
+}
+
+.sticky .site-header__content{
+    padding: 20px 30px;
+}
+
+.sticky .logo svg{
+    fill: var(--app-primary);
+}
+
+.sticky .slogan{
+    color: var(--app-gray);
+}
+
+.sticky .site-header__user__button{
+    color: var(--app-primary);
+}
+
+.sticky .site-header__user__button svg{
+    fill: var(--app-primary);
+}
+
+.sticky .site-nav__item a{
+    color: var(--app-gray);
 }
 
 
@@ -132,4 +173,57 @@
     right: 180px;
     top: 0;
     transform: rotate(180deg) scaleX(1.5) scaleY(1.25)!important;
+}
+
+
+
+
+.block-home{
+    padding: 60px;
+}
+
+.block-home__title{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.block-home__footer{
+    margin-top: 40px;
+}
+
+.block-home__footer button{
+    margin: 0 auto;
+}
+
+.doctors{
+    background: var(--app-lightgray);
+}
+
+.call-to-action{
+    background: var(--app-secondary);
+    color: #fff;
+    font-size: 1.25em;
+    padding: 120px 0 140px;
+    text-align: center;
+}
+
+.call-to-action__title{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.call-to-action__subtitle{
+    font-size: 1.5em;
+}
+
+.call-to-action button{
+    margin: 20px auto 0;
+}
+
+.site-footer{
+    text-align: center;
+    padding: 40px 0;
 }
