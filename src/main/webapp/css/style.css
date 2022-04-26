@@ -383,6 +383,11 @@
         padding: 25px 0;
     }
 
+    .main-section .morph1,
+    .main-section .morph2{
+        width: 60%;
+    }
+
 }
 
 
