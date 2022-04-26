@@ -9,6 +9,7 @@
 </head>
 <body class="home">
 	<header class="site-header">
+    	<div class="dark-mask"></div>
 		<div class="site-header__content">
 			<div class="site-header__brand">
 				<div class="logo">
@@ -19,8 +20,21 @@
 				<span class="slogan">Plataforma Online para Citas Médicas</span>
 			</div>
 			<div class="site-header__nav">
+				<div class="site-nav__header">
+					<svg x="0px" y="0px" viewBox="0 0 179 48" width="120px" fill="#00c6ff" class="site-nav__header__logo">
+                        <use xlink:href="images/icons.svg#logo"></use>
+                    </svg>
+                    <button class="close-nav" id="closeNav">
+						<svg x="0px" y="0px" viewBox="0 0 32 32" width="10px" fill="#4d3aff">
+	                        <use xlink:href="images/icons.svg#close"></use>
+	                    </svg>
+	                </button>
+				</div>
 				<nav class="site-nav">
 					<ul class="site-nav__list">
+						<li class="site-nav__item">
+							<a href="#">Home</a>
+						</li>
 						<li class="site-nav__item">
 							<a href="#">Clínicas</a>
 						</li>
@@ -36,8 +50,8 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="site-header__user">
-				<div class="site-header__user__content">
+			<div class="site-header__right">
+				<div class="site-header__user">
 					<button class="site-header__user__button button btn-ghost">
 						<svg x="0px" y="0px" viewBox="0 0 32 32" width="16px" fill="#fff">
 	                        <use xlink:href="images/icons.svg#user"></use>
@@ -45,6 +59,11 @@
 	                    <span>Mi Cuenta</span>
 					</button>
 				</div>
+				<button class="nav-mobile" id="openNav">					
+					<svg x="0px" y="0px" viewBox="0 0 24 24" width="24px" fill="#fff">
+                        <use xlink:href="images/icons.svg#nav_mobile"></use>
+                    </svg>
+				</button>
 			</div>
 		</div>
 	</header>
@@ -217,6 +236,6 @@
 	<footer class="site-footer">
 		<div class="main-row">© Copyright iziDoctor, todos los derechos reservados.</div>
 	</footer>
-	<script src="js/jquery.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="js/app.js"></script>
 </body>

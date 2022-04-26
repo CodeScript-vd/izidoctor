@@ -422,8 +422,8 @@ input[type=checkbox]{
     white-space: nowrap;
 }
 
-.button svg{
-    margin-right: 6px;
+.button span{
+    margin-left: 6px;
 }
 
 .btn-main{
@@ -464,7 +464,7 @@ input[type=checkbox]{
 
 .btn-ghost{
     background: transparent;
-    border: 2px solid;
+    border: 1px solid;
 }
 
 .btn-success{
@@ -557,6 +557,7 @@ table tr{
 .cards{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: -10px;
 }
 
@@ -660,6 +661,65 @@ table tr{
 
     .main-row{
         width: 1020px;
+    }
+
+}
+
+
+@media screen and (max-width: 1279px) {
+
+    .main-row,
+    .main-row-normal,
+    .main-row-short{
+        width: 80%;
+    }
+
+    .card-3,.card-4 {
+        flex: 0 0 50%;
+    }
+
+    .card-5 {
+        flex: 0 0 33.33%;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .main-row,
+    .main-row-normal,
+    .main-row-short{
+        width: 86%;
+    }
+
+    .cards{
+        margin: -5px;
+    }
+
+    .card{
+        padding: 5px;
+    }
+
+    .card-3,.card-4 {
+        flex: 0 0 100%;
+    }
+
+    .card-5 {
+        flex: 0 0 50%;
+    }
+
+    .card__circle-image{
+        height: 80px;
+        width: 80px;
+    }
+
+    .card__caption{
+        padding: 15px;
+    }
+
+    .card__title{
+        font-size: 1em;
     }
 
 }
