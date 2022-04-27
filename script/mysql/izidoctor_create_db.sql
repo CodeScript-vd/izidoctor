@@ -94,8 +94,7 @@ CREATE TABLE IF NOT EXISTS `izidoctor`.`Provincia` (
     REFERENCES `izidoctor`.`Departamento` (`idDepartamento`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB
-COMMENT = '	\n';
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
@@ -210,8 +209,7 @@ CREATE TABLE IF NOT EXISTS `izidoctor`.`Usuario` (
     REFERENCES `izidoctor`.`Persona` (`idPersona`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB
-COMMENT = '	';
+ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
