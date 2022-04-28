@@ -670,7 +670,84 @@ table tr{
 
 
 
+/* Pagination */
 
+.pagination{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0 0;
+}
+
+.pagination li{
+    padding: 4px;
+}
+
+.pagination li a{
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--app-lightgray1);
+    box-shadow: 0 5px 10px rgba(50, 60, 72, 0.04);
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    min-width: 40px;
+    padding: 0 10px;
+}
+
+.pagination li:hover a{
+    border: 1px solid var(--app-primary);
+    color: var(--app-primary);
+}
+
+.pagination li.current a{
+    background: var(--app-primary);
+    border: 1px solid var(--app-primary);
+    color: #fff;
+}
+
+
+
+
+
+/* Form */
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.form label{
+    opacity: 0.6;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form__group{
+    flex: 1;
+    padding: 10px;
+}
+
+.form__group:last-child{
+    margin-bottom: 0;
+}
+
+.form__group__separation{
+    flex: 0 0 100%;
+}
+
+.form__title{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.form__title:first-child{
+    margin-top: 0;
+}
 
 
 
@@ -1048,6 +1125,10 @@ table tr{
 
     .card__title{
         font-size: 1em;
+    }
+
+    .form__group{
+        flex: 0 0 100%;
     }
 
 }
