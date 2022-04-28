@@ -475,7 +475,8 @@
 @media screen and (max-width: 1279px) {
 
     .site-header__content,
-    .sticky .site-header__content {
+    .sticky .site-header__content,
+    .home .site-header__content {
         padding: 20px;
     }
 
@@ -539,8 +540,10 @@
         padding: 10px 30px;
     }
 
+    .main-section,
     .home .main-section{
-        height: 480px;
+        height: auto;
+        padding: 100px 0 50px;
     }
 
     .main-section__image{
@@ -587,8 +590,8 @@
         padding: 25px 0;
     }
 
-    .main-section{
-        height: auto;
+    .main-section,
+    .home .main-section{
         padding: 100px 0 30px;
     }
 
