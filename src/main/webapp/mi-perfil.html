@@ -70,7 +70,7 @@
 		<div class="main-row main-section__wrapper">
 			<div class="main-section__content">
 				<div class="main-section__caption">
-					<h1 class="main-section__title">Reserva de Cita</h1>
+					<h1 class="main-section__title">Mi Perfil</h1>
 				</div>
 			</div>
 		</div>
@@ -93,81 +93,61 @@
 			</path>
 		</svg>
 	</section>
-	<section class="booking wrapper">
+	<section class="profile wrapper">
 		<div class="main-row page__wrapper">
+			<aside class="sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="#">
+							<svg x="0px" y="0px" viewBox="0 0 32 32" width="16px">
+		                        <use xlink:href="images/icons.svg#info"></use>
+		                    </svg>
+		                    <span>Información</span>
+		                </a>
+					</li>
+					<li class="sidebar__item">
+						<a href="#">
+							<svg x="0px" y="0px" viewBox="0 0 32 32" width="16px">
+		                        <use xlink:href="images/icons.svg#schedule"></use>
+		                    </svg>
+		                    <span>Mis Reservas</span>
+		                </a>
+					</li>
+				</ul>				
+			</aside>
 			<div class="page__content">
+				<h2 class="page__content__title">Información</h2>
 				<form class="form">
 					<h3 class="form__title form__group">Información Personal</h3>
 					<div class="form__group__separation"></div>
 					<div class="form__group">
 						<label>Nombres*</label>
-						<input type="text" name="">
+						<input type="text" name="" value="Pedro Javier">
 					</div>
 					<div class="form__group">
 						<label>Apellidos*</label>
-						<input type="text" name="">
+						<input type="text" name="" value="Ramos Suárez">
 					</div>
 					<div class="form__group">
 						<label>DNI*</label>
-						<input type="text" name="">
+						<input type="text" name="" value="44665974">
 					</div>
 					<div class="form__group__separation"></div>
 					<h3 class="form__title form__group">Información de Contacto</h3>
 					<div class="form__group__separation"></div>
 					<div class="form__group">
 						<label>Número de Celular*</label>
-						<input type="text" name="">
+						<input type="text" name="" value="951669887">
 					</div>
 					<div class="form__group">
 						<label>Email*</label>
-						<input type="text" name="">
+						<input type="text" name="" value="pramos@gmail.com">
 					</div>
 					<div class="form__group__separation"></div>
 					<div class="form__group">
-						<label>Comentarios (Opcional)</label>
-						<textarea></textarea>
-					</div>
-					<div class="form__group__separation"></div>
-					<div class="form__group">
-						<button type="submit" class="button btn-main-full">Confirmar Reserva</button>
+						<button type="submit" class="button btn-main-full">Guardar Cambios</button>
 					</div>
 				</form>
-			</div>
-			<div class="sidebar">
-				<h4 class="sidebar__title">Resumen</h4>
-				<ul class="sidebar__list">
-					<li class="sidebar__item">
-						<div class="sidebar__image">
-							<img src="images/doctors/doctor01.jpg">
-						</div>
-						<div class="sidebar__caption">
-							<span>Dr. Pedro Sánchez Ramires</span>
-							Dermatólogo
-						</div>
-					</li>
-					<li class="sidebar__item">
-						<span class="sidebar__image">
-							<svg x="0px" y="0px" viewBox="0 0 32 32" width="24px" fill="#fff">
-		                        <use xlink:href="images/icons.svg#schedule"></use>
-		                    </svg>
-						</span>
-						<div class="sidebar__caption">
-							<span>11:20</span>
-							29 Abril 2022, viernes
-						</div>
-					</li>
-					<li class="sidebar__item">
-						<span class="sidebar__image">
-							<svg x="0px" y="0px" viewBox="0 0 32 32" width="24px" fill="#fff">
-		                        <use xlink:href="images/icons.svg#location"></use>
-		                    </svg>
-						</span>
-						<div class="sidebar__caption">
-							<span>Clínica Delgado / Miraflores</span>
-							Ca. Gral. Borgoño, Miraflores 15074
-						</div>
-					</li>
-				</ul>
 			</div>
 		</div>
 	</section>

@@ -393,32 +393,77 @@
 
 
 
-.booking__wrapper{
-    align-items: flex-start;
+
+
+
+
+.schedule__item{
+    margin-bottom: 20px;
+}
+
+
+.schedule__link{
+    align-items: center;
     display: flex;
 }
 
-.booking__summary{
+
+
+
+
+.page__wrapper{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page__content{
+    width: 66%;
+}
+
+.page__content__title{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.sidebar{
     background: var(--app-lightgray);
     border-radius: 8px;
     flex: 0 0 30%;
-    margin-left: 40px;
     padding: 40px;
 }
 
-.booking__summary__title{
+.sidebar__title{
     font-size: 1.5em;
     font-weight: 600;
     line-height: 1.25em;
 }
 
-.booking__summary__item{
+.sidebar__item{
     align-items: center;
     display: flex;
     margin-top: 20px;
 }
 
-.booking__summary__image{
+.sidebar__item a{
+    align-items: center;
+    color: var(--app-primary);
+    display: flex;
+    font-weight: bold;
+}
+
+.sidebar__item a svg{
+    fill: var(--app-primary);
+    margin-right: 6px;
+}
+
+.sidebar__item:first-child{
+    margin-top: 0;
+}
+
+.sidebar__image,
+.schedule__item__icon{
     align-items: center;
     background: var(--app-primary);
     border-radius: 40px;
@@ -430,19 +475,71 @@
     margin-right: 10px;
 }
 
-.booking__summary__image img{
+.sidebar__image img{
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
 
-.booking__summary__caption span{
+.sidebar__caption span{
     display: block;
     font-size: 1.125em;
     font-weight: bold;
 }
 
 .booking .button{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Auth */
+
+
+.login{
+    background: var(--app-lightgray);
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.login__content{
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    padding: 40px;
+    max-width: 480px;
+}
+
+.login__title{
+    align-items: center;
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.login__logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;    
+}
+
+.login__logo svg{
+    fill: var(--app-primary);
+}
+
+.login .button{
+    text-align: center;
     width: 100%;
 }
 
@@ -563,12 +660,12 @@
         flex: 0 0 100%;
     }
 
-    .booking__wrapper{
+    .page__wrapper{
         display: block;
     }
 
-    .booking__summary{
-        margin: 30px 0 0;
+    .sidebar{
+        margin: 30px 0 30px;
         padding: 30px;
     }
 
