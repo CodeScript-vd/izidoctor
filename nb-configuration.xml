@@ -13,11 +13,15 @@ Properties that influence various parts of the IDE, especially code formatting a
 You can copy and paste the single properties, into the pom.xml file and the IDE will pick them up.
 That way multiple projects can share the same settings (useful for formatting rules for example).
 Any value defined here will override the pom.xml file value but is only applicable to the current project.
+Intente primero cambiar gfv3ee6 a gfv5ee8 y luego cambie 1.7-web a 1.8-web
+ <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>gfv610ee9</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>
 -->
-        <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>gfv610ee9</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>
+        <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>gfv510ee8</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>
         <netbeans.compile.on.save>all</netbeans.compile.on.save>
         <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_j2eeVersion>9.0-web</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_j2eeVersion>
         <org-netbeans-modules-web-clientproject-api.js_2e_libs_2e_folder>js/libs</org-netbeans-modules-web-clientproject-api.js_2e_libs_2e_folder>
         <org-netbeans-modules-javascript2-requirejs.enabled>true</org-netbeans-modules-javascript2-requirejs.enabled>
+        <netbeans.hint.jdkPlatform>JDK_11</netbeans.hint.jdkPlatform>
+        <org-netbeans-modules-projectapi.jsf_2e_language>JSP</org-netbeans-modules-projectapi.jsf_2e_language>
     </properties>
 </project-shared-configuration>

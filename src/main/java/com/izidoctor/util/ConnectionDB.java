@@ -9,7 +9,7 @@ public class ConnectionDB {
         ConnectionImpl cnx = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String cadena = "jdbc:mysql://localhost/izidoctor?user=root&password=root";
+            String cadena = "jdbc:mysql://desa-web-integrado.mysql.database.azure.com:3306/izidoctor?user=mysqlusr&password=X8MQ*sWvEQ4Uu692&useSSL=true";
             cnx = (ConnectionImpl) DriverManager.getConnection(cadena);
             System.out.println("Conexion OK");
         } catch (Exception e) {
