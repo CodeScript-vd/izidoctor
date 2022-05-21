@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="plantilla.xhtml"     >
+
+    <ui:define name="detallecuerpo">
+    	
+	<section class="main-section">
+		<div class="main-row main-section__wrapper">
+			<div class="main-section__content">
+				<div class="main-section__caption">
+					<h1 class="main-section__title">Mi Perfil</h1>
+				</div>
+			</div>
+		</div>
+		<svg class="morph morph1" x="0px" y="0px" viewBox="0 0 720 390">
+			<path fill="#00baff">
+				<animate repeatCount="indefinite" attributeName="d" dur="10s"				
+				values="M0,390h720c0,0-89.87-251.02-319.92-178.81c-147.65,46.34-92.63-63.02-220.42-76.64C51.87,120.93,166.65,0,0,0L0,390z;		
+				M0,390h720c0,0-54.11-324.67-319.92-178.81c-135.66,74.44-92.41-135.96-241.75-96.08C34.17,148.27,166.65,0,0,0L0,390z;
+				M0,390h720c0,0-5.31-372.17-287.89-228.67C262.33,247.56,279.22,148,143.22,176.44C17.43,202.75,166.65,0,0,0L0,390z;
+				M0,390h720c0,0-89.87-251.02-319.92-178.81c-147.65,46.34-92.63-63.02-220.42-76.64C51.87,120.93,166.65,0,0,0L0,390z"/>
+			</path>
+		</svg>
+		<svg class="morph morph2" x="0px" y="0px" viewBox="0 0 720 390">
+			<path fill="#00baff">
+				<animate repeatCount="indefinite" attributeName="d" dur="12s"				
+				values="M0,390h720c0,0-89.87-251.02-319.92-178.81c-147.65,46.34-92.63-63.02-220.42-76.64C51.87,120.93,166.65,0,0,0L0,390z;		
+				M0,390h720c0,0-54.11-324.67-319.92-178.81c-135.66,74.44-92.41-135.96-241.75-96.08C34.17,148.27,166.65,0,0,0L0,390z;
+				M0,390h720c0,0-5.31-372.17-287.89-228.67C262.33,247.56,279.22,148,143.22,176.44C17.43,202.75,166.65,0,0,0L0,390z;
+				M0,390h720c0,0-89.87-251.02-319.92-178.81c-147.65,46.34-92.63-63.02-220.42-76.64C51.87,120.93,166.65,0,0,0L0,390z"/>
+			</path>
+		</svg>
+	</section>
+	<section class="profile wrapper">
+		<div class="main-row page__wrapper">
+			<aside class="sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="views/mi-perfil.xhtml">
+							<svg x="0px" y="0px" viewBox="0 0 32 32" width="16px">
+		                        <use href="images/icons.svg#info"></use>
+		                    </svg>
+		                    <span>Información</span>
+		                </a>
+					</li>
+					<li class="sidebar__item">
+						<a href="views/mis-reservas.xhtml">
+							<svg x="0px" y="0px" viewBox="0 0 32 32" width="16px">
+		                        <use href="images/icons.svg#schedule"></use>
+		                    </svg>
+		                    <span>Mis Reservas</span>
+		                </a>
+					</li>
+				</ul>				
+			</aside>
+			<div class="page__content">
+				<h2 class="page__content__title">Mis Reservas</h2>
+				<ul class="schedule__list">
+					<li class="schedule__item">
+						<a href="#" class="schedule__link">
+							<span class="schedule__item__icon">
+								<svg x="0px" y="0px" viewBox="0 0 32 32" width="24px" fill="#fff">
+			                        <use xlink:href="images/icons.svg#schedule"></use>
+			                    </svg>
+							</span>
+							<div class="schedule__item__caption">
+							Reserva en Clínica Delgado / Miraflores
+							</div>
+						</a>
+					</li>
+					<li class="schedule__item">
+						<a href="#" class="schedule__link">
+							<span class="schedule__item__icon">
+								<svg x="0px" y="0px" viewBox="0 0 32 32" width="24px" fill="#fff">
+			                        <use xlink:href="images/icons.svg#schedule"></use>
+			                    </svg>
+							</span>
+							<div class="schedule__item__caption">
+							Reserva en Clínica Ricardo Palma / San Isidro
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+    </ui:define>
+</ui:composition>

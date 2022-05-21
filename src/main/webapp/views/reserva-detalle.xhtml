@@ -7,13 +7,12 @@
                 template="plantilla.xhtml"     >
 
     <ui:define name="detallecuerpo">
-
+    	
 	<section class="main-section">
 		<div class="main-row main-section__wrapper">
 			<div class="main-section__content">
 				<div class="main-section__caption">
-					<h1 class="main-section__title">Dr. Pedro Sánchez Ramires</h1>
-					<h2 class="main-section__subtitle">Dermatólogo</h2>
+					<h1 class="main-section__title">Mi Perfil</h1>
 				</div>
 			</div>
 		</div>
@@ -36,76 +35,58 @@
 			</path>
 		</svg>
 	</section>
-	<section class="booking wrapper">
-		<div class="main-row booking__wrapper">
-			<div class="booking__content">
-				<form class="form">
-					<h3 class="form__title form__group">Información Personal</h3>
-					<div class="form__group__separation"></div>
-					<div class="form__group">
-						<label>Nombres*</label>
-						<input type="text" name="">
-					</div>
-					<div class="form__group">
-						<label>Apellidos*</label>
-						<input type="text" name="">
-					</div>
-					<div class="form__group">
-						<label>DNI*</label>
-						<input type="text" name="">
-					</div>
-					<div class="form__group__separation"></div>
-					<h3 class="form__title form__group">Información de Contacto</h3>
-					<div class="form__group__separation"></div>
-					<div class="form__group">
-						<label>Número de Celular*</label>
-						<input type="text" name="">
-					</div>
-					<div class="form__group">
-						<label>Email*</label>
-						<input type="text" name="">
-					</div>
-					<div class="form__group__separation"></div>
-					<div class="form__group">
-						<label>Comentarios (Opcional)</label>
-						<textarea></textarea>
-					</div>
-					<div class="form__group__separation"></div>
-					<div class="form__group">
-						<button type="submit" class="button btn-main-full">Confirmar Reserva</button>
-					</div>
-				</form>
-			</div>
-			<div class="booking__summary">
-				<h4 class="booking__summary__title">Resumen</h4>
-				<ul class="booking__summary__list">
-					<li class="booking__summary__item">						
-						<div class="booking__summary__image">
+	<section class="profile wrapper">
+		<div class="main-row page__wrapper">
+			<aside class="sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="views/mi-perfil.xhtml">
+							<svg x="0px" y="0px" viewBox="0 0 32 32" width="16px">
+		                        <use href="images/icons.svg#info"></use>
+		                    </svg>
+		                    <span>Información</span>
+		                </a>
+					</li>
+					<li class="sidebar__item">
+						<a href="views/mis-reservas.xhtml">
+							<svg x="0px" y="0px" viewBox="0 0 32 32" width="16px">
+		                        <use href="images/icons.svg#schedule"></use>
+		                    </svg>
+		                    <span>Mis Reservas</span>
+		                </a>
+					</li>
+				</ul>				
+			</aside>
+			<div class="page__content">
+				<h2 class="page__content__title">Reserva en Clínica Delgado / Miraflores</h2>
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<div class="sidebar__image">
 							<img src="images/doctors/doctor01.jpg">
 						</div>
-						<div class="booking__summary__caption">
+						<div class="sidebar__caption">
 							<span>Dr. Pedro Sánchez Ramires</span>
 							Dermatólogo
 						</div>
 					</li>
-					<li class="booking__summary__item">
-						<span class="booking__summary__image">
+					<li class="sidebar__item">
+						<span class="sidebar__image">
 							<svg x="0px" y="0px" viewBox="0 0 32 32" width="24px" fill="#fff">
-		                        <use href="images/icons.svg#schedule"></use>
+		                        <use xlink:href="images/icons.svg#schedule"></use>
 		                    </svg>
 						</span>
-						<div class="booking__summary__caption">
+						<div class="sidebar__caption">
 							<span>11:20</span>
 							29 Abril 2022, viernes
 						</div>
 					</li>
-					<li class="booking__summary__item">
-						<span class="booking__summary__image">
+					<li class="sidebar__item">
+						<span class="sidebar__image">
 							<svg x="0px" y="0px" viewBox="0 0 32 32" width="24px" fill="#fff">
-		                        <use href="images/icons.svg#location"></use>
+		                        <use xlink:href="images/icons.svg#location"></use>
 		                    </svg>
 						</span>
-						<div class="booking__summary__caption">
+						<div class="sidebar__caption">
 							<span>Clínica Delgado / Miraflores</span>
 							Ca. Gral. Borgoño, Miraflores 15074
 						</div>
