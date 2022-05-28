@@ -3,7 +3,8 @@
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
-                xmlns:f="http://xmlns.jcp.org/jsf/core"                
+                xmlns:f="http://xmlns.jcp.org/jsf/core" 
+                xmlns:p="http://primefaces.org/ui"
                 template="views/plantilla.xhtml">
 
     <ui:define name="detallecuerpo">
@@ -18,19 +19,21 @@
 
                     
                     <h:form class="searchbox" >  
-                         <h:selectOneMenu class="searchbox__select" id="cMed" value="#{centroMedicoBeans.idCentroMedico}">
-                            <f:selectItem itemLabel=" Seleccione Centro Médico " itemValue=""></f:selectItem>
-                            <f:selectItems value="#{metodoCentroMedicoBeans.cmbCM}"></f:selectItems>
+                        <h:selectOneMenu class="searchbox__select" id="cMed" value="#{metodoCentroMedicoBeans.idCentroMedico}">
+                            <f:selectItem itemLabel=" Seleccione Centro Médico " itemValue="0"></f:selectItem>
+                            <f:selectItems value="#{metodoCentroMedicoBeans.comboCM}"></f:selectItems>
+                            <f:ajax event="change" render="cMedSuc" execute="cMed" listener="#{metodoCentroMedicoBeans.obtenerCentroMedico}" ></f:ajax>
                         </h:selectOneMenu>
                         
-                        <h:selectOneMenu class="searchbox__select" id="cMedSuc" value="#{centroMedicoSucursalBeans.idCentroMedicoSucursal}">
-                            <f:selectItem itemLabel=" Seleccione Sucursal " itemValue=""></f:selectItem>
-                            <f:selectItems value="#{metodoCentroMedicoSucursalBeans.cmbCM}"></f:selectItems>
+                        <h:selectOneMenu class="searchbox__select" id="cMedSuc" value="#{metodoCentroMedicoSucursalBeans.idCentroMedicoSucursal}">
+                            <f:selectItem itemLabel=" Seleccione Sucursal " noSelectionOption=""></f:selectItem>
+                            <f:selectItems value="#{metodoCentroMedicoBeans.metodoCentroMedicoSucursalBeans.cmbCMS}">  </f:selectItems>
+                            <f:ajax execute="cMedSuc" event="change" listener="#{metodoCentroMedicoSucursalBeans.obtenerCentroMedicoSucursal}" render="cMedEsp"  ></f:ajax>
                         </h:selectOneMenu>
                    
                         <h:selectOneMenu class="searchbox__select" id="cMedEsp" value="#{centroMedicoEspecialidadBeans.idEspecialidad}">
-                            <f:selectItem itemLabel=" Seleccione Especialidad " itemValue=""></f:selectItem>
-                            <f:selectItems value="#{metodoCentroMedicoEspecialidadBeans.cmbCME}"></f:selectItems>
+                            <f:selectItem itemLabel=" Seleccione Especialidad " itemValue="0"></f:selectItem>
+                            <f:selectItems value="#{metodoCentroMedicoSucursalBeans.metodoCentroMedicoEspecialidadBeans.cmbCME}"></f:selectItems>
                         </h:selectOneMenu>
 
                         <h:commandButton class="button btn-secondary-full" value="Buscar" action="views/resultados.xhtml"></h:commandButton>
